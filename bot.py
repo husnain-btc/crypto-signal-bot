@@ -2,7 +2,7 @@ import requests
 
 NTFY_TOPIC = "YOUR_NTFY_TOPIC"
 
-BINANCE_URL = "https://api.binance.com/api/v3/klines"
+BINANCE_URL = "https://api1.binance.com/api/v3/klines"
 
 
 def get_klines(symbol, interval="1h", limit=5):
