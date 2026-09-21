@@ -1,16 +1,16 @@
 import requests
-import time
 
-# NTFY settings
 NTFY_TOPIC = "YOUR_NTFY_TOPIC"
 
-def send_signal(message):
-    url = f"https://ntfy.sh/{NTFY_TOPIC}"
-    requests.post(url, data=message.encode("utf-8"))
+url = f"https://ntfy.sh/{NTFY_TOPIC}"
 
-send_signal("🤖 Crypto Bot TEST — Bot is running!")
+response = requests.post(
+    url,
+    data="🤖 Crypto Bot TEST — GitHub Actions is working!".encode("utf-8"),
+    headers={
+        "Title": "Crypto Bot Test",
+        "Priority": "high"
+    }
+)
 
-print("Bot started successfully.")
-
-while True:
-    time.sleep(300)
+print("Notification sent:", response.status_code)
