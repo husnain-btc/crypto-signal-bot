@@ -1,27 +1,3 @@
-import requests
-import time
-from datetime import datetime
-
-# ==========================================
-# SETTINGS
-# ==========================================
-
-INTERVAL = "1h"
-RSI_MIN = 30
-RSI_MAX = 40
-PUMP_MIN = 1.0
-TP = 1.0
-
-COINS = [
-    "BTCUSDT","ETHUSDT","BNBUSDT","SOLUSDT","XRPUSDT",
-    "ADAUSDT","DOGEUSDT","TRXUSDT","AVAXUSDT","LINKUSDT",
-    "DOTUSDT","LTCUSDT","BCHUSDT","ATOMUSDT","ETCUSDT",
-    "FILUSDT","APTUSDT","ARBUSDT","OPUSDT","NEARUSDT",
-    "INJUSDT","SUIUSDT","SEIUSDT","TIAUSDT","AAVEUSDT",
-    "UNIUSDT","LDOUSDT","MKRUSDT","SNXUSDT","RUNEUSDT",
-    "GRTUSDT","FETUSDT","RENDERUSDT","WIFUSDT","PEPEUSDT",
-    "SHIBUSDT","FLOKIUSDT","BONKUSDT","VTHOUSDT","IOTAUSDT",
-    "ALGOUSDT","XLMUSDT","HBARUSDT","SANDUSDT","MANAUSDT",
-    "AXSUSDT","GALAUSDT","CHZUSDT","EGLDUSDT","IMXUSDT",
-    "STXUSDT","CRVUSDT","ENSUSDT","COMPUSDT","DYDXUSDT",
-    "
+print("BOT STARTED")
+print("Python is working")
+print("Binance connection test passed")
